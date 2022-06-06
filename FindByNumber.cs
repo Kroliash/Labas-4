@@ -20,7 +20,7 @@ namespace Labas_4
             int ch = int.Parse(Console.ReadLine());
             bool exsist = false;
             switch (ch)
-            {
+            {   
                 case 1:
                     information = ReadInfo.ReadTxt("info.txt");
                     foreach (Phonenote obj in information)

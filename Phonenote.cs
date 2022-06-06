@@ -25,41 +25,20 @@ public struct Phonenote : IComparable<Phonenote>
 
     public int CompareTo(Phonenote other)
     {
-        /*if (this.dateOfBirth[2] == other.dateOfBirth[2] && this.dateOfBirth[1] == other.dateOfBirth[1] &&
-            this.dateOfBirth[0] == other.dateOfBirth[0])
-        {
-            return 0;
-        }*/
-
         // 0-dd, 1-mm, 2-yy
 
-        if (this.dateOfBirth[2] > other.dateOfBirth[2])
+        if (dateOfBirth[2] != other.dateOfBirth[2])
         {
-            return +1;
+            return dateOfBirth[2] - other.dateOfBirth[2];
         }
-         if (this.dateOfBirth[2] < other.dateOfBirth[2])
+        if (dateOfBirth[1] != other.dateOfBirth[1])
         {
-            return -1;
+            return dateOfBirth[1] - other.dateOfBirth[1];
         }
-
-        if (this.dateOfBirth[1] > other.dateOfBirth[1])
+        if (dateOfBirth[0] != other.dateOfBirth[0])
         {
-            return +1;
+            return dateOfBirth[0] - other.dateOfBirth[0];
         }
-        if (this.dateOfBirth[1] < other.dateOfBirth[1])
-        {
-            return -1;
-        }
-
-        if (this.dateOfBirth[0] > other.dateOfBirth[0])
-        {
-            return +1;
-        }
-        if (this.dateOfBirth[0] < other.dateOfBirth[0])
-        {
-            return -1;
-        }
-
         return 0;
 
     }
