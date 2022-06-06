@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfPhonenote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Phonenote>
+    <initials>Berd Ds</initials>
+    <phoneNumber>9555661</phoneNumber>
+    <dateOfBirth>
+      <int>1</int>
+      <int>1</int>
+      <int>1990</int>
+    </dateOfBirth>
+  </Phonenote>
+  <Phonenote>
+    <initials>Ibram Der</initials>
+    <phoneNumber>5423965</phoneNumber>
+    <dateOfBirth>
+      <int>10</int>
+      <int>10</int>
+      <int>2000</int>
+    </dateOfBirth>
+  </Phonenote>
+</ArrayOfPhonenote>
